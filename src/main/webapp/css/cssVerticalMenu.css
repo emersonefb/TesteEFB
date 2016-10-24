@@ -1,0 +1,117 @@
+@CHARSET "ISO-8859-1";
+
+* {
+	margin: 0;
+	padding: 0
+}
+
+html,body {
+	height: 100%;
+	overflow: hidden;
+}
+
+#bg {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+
+#logo{
+	float: left;
+    margin:1 20px 10px 1;
+    width: 156px;
+	height: 92px;
+	background: blue;
+	margin-left: 8%;
+	margin-top: 1%;
+	margin-bottom: 10px;
+}
+#content {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	overflow: auto;
+}
+
+#Menu {
+	width: 800px;
+	margin-top: 10px;
+	height: 60px;
+	background-color: transparent;
+	position: relative;
+}
+
+#banner {
+	width: 800px;
+	margin: 10 auto;
+	background: #000;
+	height: 350px;
+	position: center;
+}
+
+#imbanner{
+	 width:  800px ;
+	 height: 300px ;
+}
+
+
+#principal {
+	width: 600px;
+	margin: 1 auto;
+	background: transparent;
+	height: 170px;
+	position: center;
+}
+
+#rodape {
+	width: 100%;
+	margin: 1 auto;
+	background: black;
+	opacity: 0.7;
+	height: 40px;
+	position: fixed;
+}
+
+#principal1 {
+	margin: 0 auto;
+	background: #fff;
+	opacity: 0.7;
+	position: center;
+}
+
+.ui-menuitem {
+	background-color: transparent;
+}
+
+.ui-panel {
+	background: transparent;
+	border: 0;
+}
+
+.ui-menubar {
+	background: transparent;
+	border: 0;
+}
+
+.ui-menu-list {
+background: transparent;	
+}
+
+.ui-menuitem-text {
+	color: orange;
+	font-size: large;
+}
+.ui-Textarea {
+	background: red;
+}
+
+
+#h1 {
+	color: inactiveborder;
+}
