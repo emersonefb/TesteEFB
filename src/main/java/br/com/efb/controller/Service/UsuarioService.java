@@ -22,5 +22,9 @@ public class UsuarioService {
 	public List<Usuario> listarUsuarios() {
 		return usuarioDao.list();
 	}
+
+	public Usuario FindUsuarios() {
+		return usuarioDao.find("1");
+	}
 	
 }

@@ -22,8 +22,8 @@ public class GrupoUsuario implements Serializable {
 	private String ccNomGrupo;
 
 	//bi-directional many-to-one association to Usuario
-	@OneToMany(mappedBy="GrupoUsuario")
-	private List<Usuario> Usuarios;
+//	@OneToMany(mappedBy="GrupoUsuario")
+//	private List<Usuario> Usuarios;
 
 	public GrupoUsuario() {
 	}
@@ -44,26 +44,26 @@ public class GrupoUsuario implements Serializable {
 		this.ccNomGrupo = ccNomGrupo;
 	}
 
-	public List<Usuario> getUsuarios() {
-		return this.Usuarios;
-	}
+//	public List<Usuario> getUsuarios() {
+//		return this.Usuarios;
+//	}
+//
+//	public void setUsuarios(List<Usuario> Usuarios) {
+//		this.Usuarios = Usuarios;
+//	}
 
-	public void setUsuarios(List<Usuario> Usuarios) {
-		this.Usuarios = Usuarios;
-	}
+//	public Usuario addUsuario(Usuario Usuario) {
+//		getUsuarios().add(Usuario);
+//		Usuario.setGrupoUsuario(this);
+//
+//		return Usuario;
+//	}
 
-	public Usuario addUsuario(Usuario Usuario) {
-		getUsuarios().add(Usuario);
-		Usuario.setGrupoUsuario(this);
-
-		return Usuario;
-	}
-
-	public Usuario removeUsuario(Usuario Usuario) {
-		getUsuarios().remove(Usuario);
-		Usuario.setGrupoUsuario(null);
-
-		return Usuario;
-	}
+//	public Usuario removeUsuario(Usuario Usuario) {
+//		getUsuarios().remove(Usuario);
+//		Usuario.setGrupoUsuario(null);
+//
+//		return Usuario;
+//	}
 
 }

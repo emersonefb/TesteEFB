@@ -25,13 +25,18 @@ public class UsuarioDAO extends DAO<Usuario> implements Serializable {
 	 */
 	private static final long serialVersionUID = 1L;
 
-//	@PersistenceContext
-//	EntityManager em;
+	@PersistenceContext
+	EntityManager em;
 	
 	public void salvar(Usuario cadastro) {
 		
 		em.merge(cadastro);
 		
+	}
+
+	@Override
+	public Usuario find(Long id) {
+		return super.find(id);
 	}
 
 	public List<Usuario> list () {

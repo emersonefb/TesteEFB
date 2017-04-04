@@ -9,8 +9,8 @@ import javax.persistence.*;
  * 
  */
 @Entity
-@Table(name="tblUsuario")
-@NamedQuery(name="Usuario.findAll", query="SELECT t FROM Usuario t")
+@Table(name="Usuario")
+@NamedQuery(name="Usuario.findAll", query="select u from Usuario u ")
 public class Usuario implements Serializable {
 	private static final long serialVersionUID = 1L;
 
@@ -25,9 +25,9 @@ public class Usuario implements Serializable {
 	private String ccSenha;
 
 	//bi-directional many-to-one association to GrupoUsuario
-	@ManyToOne(fetch=FetchType.LAZY)
-	@JoinColumn(name="cvIDGrupoUsu")
-	private GrupoUsuario GrupoUsuario;
+//	@ManyToOne(fetch=FetchType.LAZY)
+//	@JoinColumn(name="cvIDGrupoUsu")
+//	private GrupoUsuario GrupoUsuario;
 
 	public Usuario() {
 	}
@@ -64,12 +64,12 @@ public class Usuario implements Serializable {
 		this.ccSenha = ccSenha;
 	}
 
-	public GrupoUsuario getGrupoUsuario() {
-		return this.GrupoUsuario;
-	}
+//	public GrupoUsuario getGrupoUsuario() {
+//		return this.GrupoUsuario;
+//	}
 
-	public void setGrupoUsuario(GrupoUsuario GrupoUsuario) {
-		this.GrupoUsuario = GrupoUsuario;
-	}
+//	public void setGrupoUsuario(GrupoUsuario GrupoUsuario) {
+//		this.GrupoUsuario = GrupoUsuario;
+//	}
 
 }

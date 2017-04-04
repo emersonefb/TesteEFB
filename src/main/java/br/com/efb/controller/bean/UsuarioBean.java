@@ -32,7 +32,7 @@ public class UsuarioBean {
 				new FacesMessage(FacesMessage.SEVERITY_INFO,
 						"Salvo Com Sucesso", null));
 		try {
-			FacesContext.getCurrentInstance().getExternalContext().redirect("Sistema/Login.xhtml");
+			FacesContext.getCurrentInstance().getExternalContext().redirect("page2.xhtml");
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -59,11 +59,12 @@ public class UsuarioBean {
 
 	@PostConstruct
 	public void init() {
-//		List<Usuario> usus = usuarioService.listarUsuarios();
+		Usuario usus = usuarioService.FindUsuarios();
 //		for (Usuario usuario : usus) {
 //			System.out.println(usuario.getCcNomUsuarios());
 //			this.usuario = usuario.getCcNomUsuarios();
 //		}
+		this.usuario = usus.getCcNomUsuarios();
 	}
 	
 	public void busca() {

@@ -1,0 +1,63 @@
+@CHARSET "ISO-8859-1";
+
+#hardware{
+	width: 80%;
+	margin: 1 auto;
+	background: transparent;
+	height: 80%;
+}
+
+#hwimagem{
+	float: left;
+	width: 100%;
+	height: 80%;
+	margin: 1 auto;
+	background: transparent;
+}
+
+#hwimg{
+	float: left;
+    margin:1 20px 10px 1;
+    width: 280px;
+	height: 280px;
+}
+
+#p{
+	color: #003366;
+	font-size: large;
+	margin-top: 10px;
+	font-family: sans-serif;
+}
+
+#p1{
+	color: blue;
+	font-size: large;
+	margin-top: 10px;
+}
+#p2{
+	color: blue;
+	font-size: large;
+	margin-top: 10px;
+}
+#p3{
+	color: blue;
+	font-size: large;
+	margin-top: 10px;
+}
+
+
+#hwtext{
+	float: right;
+	width: 50%;
+	height: 60%;
+	margin: 1 auto;
+	background: transparent;
+}
+
+#contato{
+	position:relative;
+	width: 50%;
+	height: 60%;
+	margin: 1 auto;
+	background: transparent;
+}

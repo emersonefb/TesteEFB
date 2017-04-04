@@ -1,0 +1,12 @@
+/Users/fepweb/Projects/TesteEFB/src/main/java/br/com/efb/controller/DAO/UsuarioDAO.java
+/Users/fepweb/Projects/TesteEFB/src/main/java/br/com/efb/controller/entity/Modulo.java
+/Users/fepweb/Projects/TesteEFB/src/main/java/br/com/efb/controller/DAO/DAO.java
+/Users/fepweb/Projects/TesteEFB/src/main/java/br/com/efb/controller/util/IdentifierLongType.java
+/Users/fepweb/Projects/TesteEFB/src/main/java/br/com/efb/controller/util/ViewScope.java
+/Users/fepweb/Projects/TesteEFB/src/main/java/br/com/efb/controller/entity/Usuario.java
+/Users/fepweb/Projects/TesteEFB/src/main/java/br/com/efb/controller/util/StringUtils.java
+/Users/fepweb/Projects/TesteEFB/src/main/java/br/com/efb/controller/entity/GrupoUsuario.java
+/Users/fepweb/Projects/TesteEFB/src/main/java/br/com/efb/controller/util/DateUtils.java
+/Users/fepweb/Projects/TesteEFB/src/main/java/br/com/efb/controller/bean/UsuarioBean.java
+/Users/fepweb/Projects/TesteEFB/src/main/java/br/com/efb/controller/DAO/IDAO.java
+/Users/fepweb/Projects/TesteEFB/src/main/java/br/com/efb/controller/Service/UsuarioService.java

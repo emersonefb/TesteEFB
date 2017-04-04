@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="TesteEFB:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="TesteEFB-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="TesteEFB:war exploded" />
+    </root>
+  </artifact>
+</component>
