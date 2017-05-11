@@ -10,13 +10,13 @@ import javax.persistence.*;
  */
 @Entity
 @Table(name="Usuario")
-@NamedQuery(name="Usuario.findAll", query="select u from Usuario u ")
+@NamedQuery(name="Usuario.findAll", query="SELECT u FROM Usuario u")
 public class Usuario implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private long cvIDUsuarios;
+	private String cvIDUsuarios;
 
 	private String ccEmailUsu;
 
@@ -29,14 +29,14 @@ public class Usuario implements Serializable {
 //	@JoinColumn(name="cvIDGrupoUsu")
 //	private GrupoUsuario GrupoUsuario;
 
-	public Usuario() {
-	}
+//	public Usuario() {
+//	}
 
-	public long getCvIDUsuarios() {
+	public String getCvIDUsuarios() {
 		return this.cvIDUsuarios;
 	}
 
-	public void setCvIDUsuarios(long cvIDUsuarios) {
+	public void setCvIDUsuarios(String cvIDUsuarios) {
 		this.cvIDUsuarios = cvIDUsuarios;
 	}
 

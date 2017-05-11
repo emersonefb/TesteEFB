@@ -39,11 +39,11 @@ public class UsuarioDAO extends DAO<Usuario> implements Serializable {
 		return super.find(id);
 	}
 
-	public List<Usuario> list () {
-		CriteriaQuery<Usuario> query = em.getCriteriaBuilder().createQuery(Usuario.class);
-		query.select(query.from(Usuario.class));
-		List<Usuario> lista = em.createQuery(query).getResultList();
-		return lista;
-	}
-	
+//	public List<Usuario> list () {
+//		CriteriaQuery<Usuario> query = em.getCriteriaBuilder().createQuery(Usuario.class);
+//		query.select(query.from(Usuario.class));
+//		List<Usuario> lista = em.createQuery(query).getResultList();
+//		return lista;
+//	}
+
 }

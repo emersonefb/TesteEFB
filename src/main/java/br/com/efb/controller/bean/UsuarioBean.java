@@ -7,20 +7,17 @@ import javax.annotation.PostConstruct;
 import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;
 import javax.faces.view.ViewScoped;
-import javax.inject.Inject;
-import javax.inject.Named;
-
-import org.springframework.stereotype.Controller;
 
 import br.com.efb.controller.Service.UsuarioService;
 import br.com.efb.controller.entity.Usuario;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 
 @Controller
 @ViewScoped
-@Named("usuBean")
 public class UsuarioBean {
 
-	@Inject
+	@Autowired
 	private UsuarioService usuarioService;
 
 	Usuario Usuario = new Usuario();
@@ -36,7 +33,7 @@ public class UsuarioBean {
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}  
+		}
 	}
 
 	/**
@@ -59,6 +56,7 @@ public class UsuarioBean {
 
 	@PostConstruct
 	public void init() {
+		List <Usuario> usos = usuarioService.listarUsuarios();
 		Usuario usus = usuarioService.FindUsuarios();
 //		for (Usuario usuario : usus) {
 //			System.out.println(usuario.getCcNomUsuarios());

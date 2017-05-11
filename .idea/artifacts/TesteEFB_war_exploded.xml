@@ -82,6 +82,10 @@
           <element id="library" level="project" name="Maven: org.primefaces.themes:casablanca:1.0.10" />
           <element id="library" level="project" name="Maven: org.glassfish:javax.faces:2.2.4" />
           <element id="library" level="project" name="Maven: c3p0:c3p0:0.9.1.2" />
+          <element id="library" level="project" name="Maven: com.sun.jersey:jersey-server:1.19.3" />
+          <element id="library" level="project" name="Maven: com.sun.jersey:jersey-core:1.19.3" />
+          <element id="library" level="project" name="Maven: javax.ws.rs:jsr311-api:1.1.1" />
+          <element id="library" level="project" name="Maven: javax.ejb:ejb-api:3.0" />
         </element>
       </element>
       <element id="directory" name="META-INF">

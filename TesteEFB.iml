@@ -11,6 +11,13 @@
         </webroots>
       </configuration>
     </facet>
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset" name="Spring Application Context" removed="false">
+          <file>file://$MODULE_DIR$/src/main/webapp/WEB-INF/applicationContext.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_5" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/target/classes" />
@@ -97,5 +104,9 @@
     <orderEntry type="library" name="Maven: org.primefaces.themes:casablanca:1.0.10" level="project" />
     <orderEntry type="library" name="Maven: org.glassfish:javax.faces:2.2.4" level="project" />
     <orderEntry type="library" name="Maven: c3p0:c3p0:0.9.1.2" level="project" />
+    <orderEntry type="library" name="Maven: com.sun.jersey:jersey-server:1.19.3" level="project" />
+    <orderEntry type="library" name="Maven: com.sun.jersey:jersey-core:1.19.3" level="project" />
+    <orderEntry type="library" name="Maven: javax.ws.rs:jsr311-api:1.1.1" level="project" />
+    <orderEntry type="library" name="Maven: javax.ejb:ejb-api:3.0" level="project" />
   </component>
 </module>

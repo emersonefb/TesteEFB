@@ -57,10 +57,22 @@
     <url-pattern>*.xhtml</url-pattern>
   </servlet-mapping>
 
-  <!--<display-name>PersonalSite</display-name>-->
-  <!--<context-param>-->
-    <!--<param-name>javax.faces.PROJECT_STAGE</param-name>-->
-    <!--<param-value>Development</param-value>-->
-  <!--</context-param>-->
+  <servlet>
+    <servlet-name>jersey-serlvet</servlet-name>
+    <servlet-class>
+      com.sun.jersey.spi.container.servlet.ServletContainer
+    </servlet-class>
+    <init-param>
+      <param-name>com.sun.jersey.config.property.packages</param-name>
+      <param-value>br.com.efb.controller.rest</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>jersey-serlvet</servlet-name>
+    <url-pattern>/rest/*</url-pattern>
+  </servlet-mapping>
+
 
 </web-app>
