@@ -2,12 +2,14 @@ package br.com.efb.controller.entity;
 
 import java.io.Serializable;
 import javax.persistence.*;
+import javax.xml.bind.annotation.XmlRootElement;
 
 
 /**
  * The persistent class for the Usuario database table.
  * 
  */
+@XmlRootElement
 @Entity
 @Table(name="Usuario")
 @NamedQuery(name="Usuario.findAll", query="SELECT u FROM Usuario u")

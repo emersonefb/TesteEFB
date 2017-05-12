@@ -5,10 +5,13 @@
 /Users/fepweb/Projects/TesteEFB/src/main/java/br/com/efb/controller/entity/GrupoUsuario.java
 /Users/fepweb/Projects/TesteEFB/src/main/java/br/com/efb/controller/util/DateUtils.java
 /Users/fepweb/Projects/TesteEFB/src/main/java/br/com/efb/controller/xml/Publicador.java
-/Users/fepweb/Projects/TesteEFB/src/main/java/br/com/efb/controller/xml/Usuario.java
+/Users/fepweb/Projects/TesteEFB/src/main/java/br/com/efb/controller/Track.java
 /Users/fepweb/Projects/TesteEFB/src/main/java/br/com/efb/controller/xml/Serializador.java
+/Users/fepweb/Projects/TesteEFB/src/main/java/br/com/efb/controller/rest/JSONService.java
 /Users/fepweb/Projects/TesteEFB/src/main/java/br/com/efb/controller/DAO/UsuarioDAO.java
 /Users/fepweb/Projects/TesteEFB/src/main/java/br/com/efb/controller/entity/Modulo.java
+/Users/fepweb/Projects/TesteEFB/src/main/java/br/com/efb/controller/rest/CotacaoResource.java
+/Users/fepweb/Projects/TesteEFB/src/main/java/br/com/efb/controller/rest/MovieController.java
 /Users/fepweb/Projects/TesteEFB/src/main/java/br/com/efb/controller/util/IdentifierLongType.java
 /Users/fepweb/Projects/TesteEFB/src/main/java/br/com/efb/controller/xml/Gerador.java
 /Users/fepweb/Projects/TesteEFB/src/main/java/br/com/efb/controller/rest/HelloWorld.java
