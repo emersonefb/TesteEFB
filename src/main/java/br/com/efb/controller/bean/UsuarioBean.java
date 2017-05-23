@@ -7,11 +7,8 @@ import javax.annotation.PostConstruct;
 import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;
 import javax.faces.view.ViewScoped;
-import javax.xml.ws.Endpoint;
-
 import br.com.efb.controller.Service.UsuarioService;
 import br.com.efb.controller.entity.Usuario;
-import br.com.efb.controller.xml.Gerador;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
@@ -21,6 +18,10 @@ public class UsuarioBean {
 
 	@Autowired
 	private UsuarioService usuarioService;
+
+//	@Autowired
+//	WebApplicationContext webApplicationContext;
+
 
 	Usuario Usuario = new Usuario();
 
@@ -58,6 +59,9 @@ public class UsuarioBean {
 
 	@PostConstruct
 	public void init() {
+
+//		webApplicationContext.getApplicationName();
+
 		List <Usuario> usos = usuarioService.listarUsuarios();
 		Usuario usus = usuarioService.FindUsuarios();
 //		for (Usuario usuario : usus) {
@@ -66,9 +70,6 @@ public class UsuarioBean {
 //		}
 		this.usuario = usus.getCcNomUsuarios();
 
-		System.out.println("web service - Gerador Inicializado");
-		Gerador gerador = new Gerador();
-		Endpoint.publish("http://localhost:8080/gerador", gerador);
 	}
 	
 	public void busca() {

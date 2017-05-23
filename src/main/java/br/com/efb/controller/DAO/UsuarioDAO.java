@@ -12,7 +12,6 @@ import org.springframework.stereotype.Repository;
 import br.com.efb.controller.entity.Usuario;
 
 @Repository
-
 public class UsuarioDAO extends DAO<Usuario> implements Serializable {
 
 	public UsuarioDAO() {
