@@ -88,22 +88,16 @@
 		proxy-target-class="true" />
 
 	<!-- View scope - Integracao do Spring com JSF -->
-	<bean class="org.springframework.beans.factory.config.CustomScopeConfigurer">
-		<property name="scopes">
-			<map>
-				<entry key="view">
-					<bean class="br.com.efb.controller.util.ViewScope" />
-				</entry>
-			</map>
-		</property>
-	</bean>
+	<!--<bean class="org.springframework.beans.factory.config.CustomScopeConfigurer">-->
+		<!--<property name="scopes">-->
+			<!--<map>-->
+				<!--<entry key="view">-->
+					<!--<bean class="br.com.efb.controller.util.ViewScope" />-->
+				<!--</entry>-->
+			<!--</map>-->
+		<!--</property>-->
+	<!--</bean>-->
 
 	<context:annotation-config></context:annotation-config>
-
-	<!-- Enables the Spring MVC @Controller programming model -->
-	<!--<annotation-driven />-->
-
-	<!-- Handles HTTP GET requests for /resources/** by efficiently serving up static resources in the ${webappRoot}/resources directory -->
-	<!--<mvc:resources mapping="/resources/**" location="/resources/" />-->
 
 </beans>

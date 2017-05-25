@@ -7,6 +7,7 @@ package br.com.efb.controller.rest;
 import br.com.efb.controller.entity.Usuario;
 import hello.AppException;
 import io.swagger.annotations.*;
+import org.springframework.web.bind.annotation.*;
 
 
 import javax.servlet.*;
@@ -17,9 +18,9 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.*;
 import java.io.IOException;
 
+
 @Api(tags = {"helloworld"})
 @Path("/helloworld")
-@Produces
 public class HelloWorld extends BaseResource{
 
     private Usuario usuario = new Usuario();
