@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Config/jdbc.properties" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/src/main/java/br/com/efb/controller/rest/BaseResource.java" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/src/main/java/br/com/efb/controller/rest/CORSResponseFilter.java" charset="ISO-8859-1" />
-    <file url="file://$PROJECT_DIR$/src/main/java/br/com/efb/controller/rest/RestSecurityFilter.java" charset="ISO-8859-1" />
-    <file url="file://$PROJECT_DIR$/src/main/java/br/com/efb/controller/rest/SecurityRequestFilter.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/META-INF/VersionInfo.properties" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/META-INF/context.xml" charset="ISO-8859-1" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
