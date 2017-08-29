@@ -1,0 +1,33 @@
+USE [TesteEFB]
+GO
+
+/****** Object:  Table [dbo].[usuario]    Script Date: 08/29/2017 08:45:47 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[usuario]') AND type in (N'U'))
+DROP TABLE [dbo].[usuario]
+GO
+
+USE [TesteEFB]
+GO
+
+/****** Object:  Table [dbo].[usuario]    Script Date: 08/29/2017 08:45:47 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SET ANSI_PADDING ON
+GO
+
+CREATE TABLE [dbo].[usuario](
+	[cvIDUsuarios] [int] IDENTITY primary key NOT NULL,
+	[ccEmailUsu] [varchar](50) NULL,
+	[ccNomUsuarios] [varchar](50) NULL,
+	[ccSenha] [varchar](30) NULL
+) ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+

@@ -11,19 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fcf66a6d-8877-4626-be6a-91ff12c049c5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataBase/Script SQLServer" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TesteEFB.iml" afterPath="$PROJECT_DIR$/TesteEFB.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/efb/controller/DAO/DAO.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/efb/controller/DAO/DAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/efb/controller/DAO/UsuarioDAO.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/efb/controller/DAO/UsuarioDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/efb/controller/Service/UsuarioService.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/efb/controller/Service/UsuarioService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/efb/controller/bean/UsuarioBean.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/efb/controller/bean/UsuarioBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/efb/controller/entity/Usuario.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/efb/controller/entity/Usuario.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/efb/controller/rest/MenuRest.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/efb/controller/rest/MenuRest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/efb/controller/xml/Serializador.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/efb/controller/xml/Serializador.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataBase/Script SQLServer" afterPath="$PROJECT_DIR$/DataBase/Script SQLServer" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -141,8 +129,8 @@
       <file leaf-file-name="Script SQLServer" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DataBase/Script SQLServer">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="23" column="36" lean-forward="true" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+            <state relative-caret-position="268">
+              <caret line="19" column="2" lean-forward="false" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -1152,12 +1140,12 @@
       <workItem from="1500895961845" duration="1094000" />
       <workItem from="1502209559807" duration="6107000" />
       <workItem from="1503611605012" duration="21349000" />
-      <workItem from="1504006175578" duration="5269000" />
+      <workItem from="1504006175578" duration="5488000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="178288000" />
+    <option name="totallyTimeSpent" value="178507000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="769" y="-1001" width="1280" height="997" extended-state="6" />
@@ -1629,8 +1617,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DataBase/Script SQLServer">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="23" column="36" lean-forward="true" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+        <state relative-caret-position="268">
+          <caret line="19" column="2" lean-forward="false" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
           <folding />
         </state>
       </provider>
