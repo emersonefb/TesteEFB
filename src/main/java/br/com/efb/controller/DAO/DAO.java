@@ -17,8 +17,10 @@ import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
 
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 @Repository
+@Transactional
 public abstract class DAO<T> implements IDAO<T>,Serializable {
 
 	private static final long serialVersionUID = 1L;
@@ -39,6 +41,7 @@ public abstract class DAO<T> implements IDAO<T>,Serializable {
 		this.em = em;
 	}
 
+	@Transactional
 	public void insert(T t) {
 		em.persist(t);		
 	}

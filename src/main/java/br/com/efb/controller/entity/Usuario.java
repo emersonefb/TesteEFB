@@ -18,7 +18,7 @@ public class Usuario implements Serializable {
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private String cvIDUsuarios;
+	private int cvIDUsuarios;
 
 	private String ccEmailUsu;
 
@@ -34,11 +34,11 @@ public class Usuario implements Serializable {
 //	public Usuario() {
 //	}
 
-	public String getCvIDUsuarios() {
+	public int getCvIDUsuarios() {
 		return this.cvIDUsuarios;
 	}
 
-	public void setCvIDUsuarios(String cvIDUsuarios) {
+	public void setCvIDUsuarios(int cvIDUsuarios) {
 		this.cvIDUsuarios = cvIDUsuarios;
 	}
 

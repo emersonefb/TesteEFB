@@ -55,4 +55,26 @@ public class MenuRest extends BaseResource{
         }
         return this.usuario;
     }
+
+    @POST
+    @Produces(MediaType.APPLICATION_JSON)
+    @ApiResponses(value = {
+            @ApiResponse(code = 200, message = "Service executed without errors", response = Usuario.class),
+            @ApiResponse(code = 400, message = "There is errors on the validation of request input data", response = AppException.class),
+            @ApiResponse(code = 500, message = "An internal error occurred", response = AppException.class)
+    })
+    @ApiOperation(value = "Find Operation By ID",
+            response = Usuario.class)
+    @Path("/saveeefb")
+    public Usuario postSaveUser(Usuario a) {
+        try{
+            if (usuarioService!=null){
+                this.usuario = usuarioService.salvar(a);
+            }
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+        return this.usuario;
+    }
 }

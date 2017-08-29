@@ -63,12 +63,13 @@ public class UsuarioBean {
 //		webApplicationContext.getApplicationName();
 
 		List <Usuario> usos = usuarioService.listarUsuarios();
-		Usuario usus = usuarioService.FindUsuarios();
-//		for (Usuario usuario : usus) {
-//			System.out.println(usuario.getCcNomUsuarios());
-//			this.usuario = usuario.getCcNomUsuarios();
-//		}
-		this.usuario = usus.getCcNomUsuarios();
+		if (!usos.isEmpty()){
+			for (Usuario usuario : usos) {
+				System.out.println(usuario.getCcNomUsuarios());
+				this.usuario = usuario.getCcNomUsuarios() + " : " + usuario.getCvIDUsuarios();
+			}
+		}
+
 
 	}
 	

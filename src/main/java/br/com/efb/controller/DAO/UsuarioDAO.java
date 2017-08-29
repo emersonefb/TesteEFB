@@ -10,8 +10,10 @@ import javax.persistence.criteria.CriteriaQuery;
 import org.springframework.stereotype.Repository;
 
 import br.com.efb.controller.entity.Usuario;
+import org.springframework.transaction.annotation.Transactional;
 
 @Repository
+@Transactional
 public class UsuarioDAO extends DAO<Usuario> implements Serializable {
 
 	public UsuarioDAO() {
@@ -26,11 +28,13 @@ public class UsuarioDAO extends DAO<Usuario> implements Serializable {
 
 	@PersistenceContext
 	EntityManager em;
-	
-	public void salvar(Usuario cadastro) {
-		
-		em.merge(cadastro);
-		
+
+	@Transactional
+	public Usuario salvar(Usuario cadastro) {
+
+		Usuario usuario = super.merge(cadastro);
+
+		return usuario;
 	}
 
 	@Override
@@ -38,11 +42,11 @@ public class UsuarioDAO extends DAO<Usuario> implements Serializable {
 		return super.find(id);
 	}
 
-//	public List<Usuario> list () {
-//		CriteriaQuery<Usuario> query = em.getCriteriaBuilder().createQuery(Usuario.class);
-//		query.select(query.from(Usuario.class));
-//		List<Usuario> lista = em.createQuery(query).getResultList();
-//		return lista;
-//	}
+	public List<Usuario> list () {
+		CriteriaQuery<Usuario> query = em.getCriteriaBuilder().createQuery(Usuario.class);
+		query.select(query.from(Usuario.class));
+		List<Usuario> lista = em.createQuery(query).getResultList();
+		return lista;
+	}
 
 }

@@ -15,7 +15,7 @@ public class Serializador {
 
         Usuario conta = new Usuario();
         conta.setCcNomUsuarios("Test");
-        conta.setCvIDUsuarios("1");
+//        conta.setCvIDUsuarios("1");
 
         marshaller.marshal(conta, new File("conta.xml"));
         System.out.println(conta);

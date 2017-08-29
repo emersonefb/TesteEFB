@@ -15,8 +15,9 @@ public class UsuarioService {
 	@Autowired
 	UsuarioDAO usuarioDao;
 	
-	public void salvar(Usuario Usuario) {
-		usuarioDao.merge(Usuario);
+	public Usuario salvar(Usuario usuario) {
+
+		 return usuarioDao.salvar(usuario);
 	}
 
 	public List<Usuario> listarUsuarios() {
