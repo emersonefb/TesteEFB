@@ -38,6 +38,11 @@ public class UsuarioDAO extends DAO<Usuario> implements Serializable {
 	}
 
 	@Override
+	public void delete(Usuario usuario) {
+		super.delete(usuario);
+	}
+
+	@Override
 	public Usuario find(Long id) {
 		return super.find(id);
 	}

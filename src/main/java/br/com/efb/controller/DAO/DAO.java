@@ -61,6 +61,13 @@ public abstract class DAO<T> implements IDAO<T>,Serializable {
 		return t;
 	}
 
+	public T find(int id) {
+		if (id==0)
+			return null;
+		T t = em.find(classe, id);
+		return t;
+	}
+
 	public T find(String id) {
 		T t = em.find(classe, id);
 		return t;

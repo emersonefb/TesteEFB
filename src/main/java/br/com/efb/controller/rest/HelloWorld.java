@@ -37,7 +37,7 @@ public class HelloWorld extends BaseResource{
     public Usuario getClichedMessage() {
 
         if (usuarioService!=null){
-            this.usuario = usuarioService.FindUsuarios();
+            this.usuario = usuarioService.FindUsuarios(usuario);
         }
         return this.usuario;
     }

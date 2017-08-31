@@ -14,18 +14,36 @@ public class UsuarioService {
 
 	@Autowired
 	UsuarioDAO usuarioDao;
-	
+
 	public Usuario salvar(Usuario usuario) {
 
-		 return usuarioDao.salvar(usuario);
+		return usuarioDao.salvar(usuario);
+	}
+
+	public Usuario delete(Usuario usuario) {
+
+		try{
+			usuario = usuarioDao.find(usuario.getCvIDUsuarios());
+			usuarioDao.delete(usuario);
+
+		}catch (Exception e){
+			e.printStackTrace();
+		}
+		return usuarioDao.find(usuario.getCvIDUsuarios());
 	}
 
 	public List<Usuario> listarUsuarios() {
 		return usuarioDao.list();
 	}
 
-	public Usuario FindUsuarios() {
-		return usuarioDao.find("1");
+	public Usuario FindUsuarios(Usuario usuario) {
+		Usuario ret = new Usuario();
+		try{
+			ret = usuarioDao.find(usuario.getCvIDUsuarios());
+		}catch (Exception e){
+			e.printStackTrace();
+		}
+		return ret;
 	}
 	
 }
