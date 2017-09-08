@@ -36,6 +36,7 @@ public class HelloWorld extends BaseResource{
             response = Usuario.class)
     public Usuario getClichedMessage() {
 
+        usuario.setCvIDUsuarios(1);
         if (usuarioService!=null){
             this.usuario = usuarioService.FindUsuarios(usuario);
         }
